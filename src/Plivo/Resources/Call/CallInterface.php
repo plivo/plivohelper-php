@@ -101,6 +101,7 @@ class CallInterface extends ResourceInterface
                 $responseContents['api_id'],
                 $responseContents['message'],
                 $responseContents['request_uuid'],
+                $responseContents['invalid_numbers'],
                 $response->getStatusCode()
             );
         } else {
@@ -113,7 +114,7 @@ class CallInterface extends ResourceInterface
 
             );
         }
-        
+
     }
 
     /**
